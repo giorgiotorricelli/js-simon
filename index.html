@@ -21,30 +21,71 @@
                     <h1 class="audiowide-regular">Simon says...</h1>
                 </div>
             </div>
-            <div class="row memo-group">
-                <div class="memo-div">
-                    <input type="text" class="memo-input">
+            <div class="row choose-difficulty">
+                <h5>Choose Difficulty</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                    <label class="form-check-label" for="radioDefault1">
+                        Easy (3 numbers)
+                    </label>
                 </div>
-                <div class="memo-div">
-                    <input type="text" class="memo-input">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                    <label class="form-check-label" for="radioDefault2">
+                        Medium (5 numbers)
+                    </label>
                 </div>
-                <div class="memo-div">
-                    <input type="text" class="memo-input">
-                </div>
-                <div class="memo-div">
-                    <input type="text" class="memo-input">
-                </div>
-                <div class="memo-div">
-                    <input type="text" class="memo-input">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+                    <label class="form-check-label" for="radioDefault3">
+                        Hard (7 numbers)
+                    </label>
                 </div>
             </div>
-            <div class="row">
+            <div class="row memo-group">
+                <div class="memo-div medium">
+                    <input type="text" class="memo-input" readonly>
+                </div>
+                <div class="memo-div medium">
+                    <input type="text" class="memo-input" readonly>
+                </div>
+                <div class="memo-div medium">
+                    <input type="text" class="memo-input" readonly>
+                </div>
+                <div class="memo-div medium">
+                    <input type="text" class="memo-input" readonly>
+                </div>
+                <div class="memo-div medium">
+                    <input type="text" class="memo-input" readonly>
+                </div>
+            </div>
+            <div class="row generate-row">
                 <button class="generate-numb btn">
                     Generate new
                 </button>
             </div>
+            <div class="row timer-row">
+                <h2 class="timer audiowide-regular"></h2>
+            </div>
             <div class="row">
-                <h3 class="timer">Timer: </h3>
+                <button class="push-numb btn d-none">
+                    Push answer
+                </button>
+            </div>
+            <div class="row alert-row d-none">
+                <h4 class="alertText audiowide-regular">Puoi inserire solo valori numerici da 1 a 99, <br> non sono
+                    ammessi valori ripetuti</h4>
+            </div>
+            <div class="row score-card flex-column gap-3 text-start text-nowrap d-none">
+                <div class="col-4 score audiowide-regular">
+                    <h5>Score: 3</h5>
+                </div>
+                <div class="col-4 right audiowide-regular">
+                    <h5>Right numbers: 34, 55, 3</h5>
+                </div>
+                <div class="col-4 wrong audiowide-regular">
+                    <h5>Wrong numbers: 22, 77</h5>
+                </div>
             </div>
         </div>
     </main>

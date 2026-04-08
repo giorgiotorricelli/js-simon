@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+body {
+    background-color: rgb(212, 148, 148);
+}
+
 main {
     padding: 0 10%;
 }
@@ -21,8 +25,21 @@ main {
     padding-bottom: 5px;
 }
 
-.memo-div {
-    width: 20%;
+.easy {
+    width: calc(100% / 3);
+}
+
+.medium {
+    width: calc(100% / 5);
+}
+
+.hard {
+    width: calc(100% / 7);
+}
+
+.choose-difficulty {
+    text-align: start;
+    font-family: "Audiowide", sans-serif;
 }
 
 .memo-div input {
@@ -32,4 +49,26 @@ main {
     border-radius: 50%;
     border: 2px solid black;
     font-family: "Audiowide", sans-serif;
+    transition: all 0.7s;
+}
+
+.memo-div input:hover {
+    outline: none;
+    border: 2px solid #cd883a; 
+    box-shadow: 0px 3px 5px rgba(255, 233, 36, 0.997);
+    translate: 0 -7%;
+    transition: all 0.7s;
+}
+
+.alertText {
+    color: rgb(255, 219, 110);
+    text-shadow: 2px 2px red;
+}
+
+.score-card {
+    margin-top: 50px;
+}
+
+.score-card h5 {
+    width: 100%;
 }
